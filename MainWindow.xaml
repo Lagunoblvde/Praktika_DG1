@@ -1,0 +1,27 @@
+﻿<Window x:Class="praktika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Vlevo" Content="Таблица Товара" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Width="155" Height="37" Click="Vlevo_Click" Margin="218,127,0,0" Grid.ColumnSpan="2"/>
+        <Button x:Name="Vpravo" Grid.Column="2" Content="Таблица Заказов" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="155" Height="37" Click="Vpravo_Click" Margin="91,127,0,0"/>
+        <Button x:Name="Center" Grid.Column="1" Content="Таблица Клиентов" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="155" Height="37" Click="Center_Click" Margin="156,127,0,0" Grid.ColumnSpan="2"/>
+        <Button x:Name="Center2" Content="Таблица Тегов Товаров" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="155" Height="37" Margin="9,127,0,0" Click="Center2_Click"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="222" Height="58" Text="Для перемещения по таблицам используйте кнопки ниже."/>
+        <Frame x:Name="Stranici" Content="" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,0,47"/>
+    </Grid>
+</Window>
